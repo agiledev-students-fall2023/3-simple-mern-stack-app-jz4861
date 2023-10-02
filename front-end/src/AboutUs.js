@@ -16,7 +16,7 @@ const AboutUs = props => {
       <p>
         Check out the <Link to="/">home page</Link>.
       </p>
-      <img src={ require('./fiora.jpg') } className="App-logo" alt=" " />
+      <img src="http://localhost:7002/static/fiora.jpg" className="App-logo" alt=" " />
 
 
     </>
@@ -30,25 +30,25 @@ const AboutUs = props => {
 //console.log(data);
 
 // a function that returns a Promise
-// let doIt = () => {
-//     return new Promise((resolve, reject) => {
-//       const response = axios(
-//         "http://localhost:7002/aboutus"
-//         ) // imagine this function did an asynchronous task and then...
-//       if (response) resolve("hooraah") // call the success callback function
-//       else reject("boo!") // call the failure callback function
-//     })
-//   }
+let doIt = () => {
+    return new Promise((resolve, reject) => {
+      const response = axios(
+        "http://localhost:7002/aboutus"
+        ) // imagine this function did an asynchronous task and then...
+      if (response) resolve(response) // call the success callback function
+      else reject("boo!") // call the failure callback function
+    })
+  }
   
   // call the function, pass functions to handle its success or failure, whenever it completes
-//   doIt()
-//     .then(res => {
-//       console.log(`Success: ${res}`)
-//       //console.log(response)
-//     })
-//     .catch(err => {
-//       console.log(`Failure: ${err}`)
-//     })
+  doIt()
+    .then(res => {
+      console.log(res)
+
+    })
+    .catch(err => {
+      console.log(`Failure: ${err}`)
+    })
 
 // make this component available to be imported into any other file
 export default AboutUs

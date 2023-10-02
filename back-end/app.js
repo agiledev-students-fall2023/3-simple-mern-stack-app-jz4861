@@ -23,6 +23,7 @@ const { Message } = require('./models/Message')
 const { User } = require('./models/User')
 
 // a route to handle fetching all messages
+app.use('/static', express.static('./public'));
 app.get('/messages', async (req, res) => {
   // load all messages from database
   try {
@@ -40,25 +41,25 @@ app.get('/messages', async (req, res) => {
   }
 })
 
-app.get('/aboutus', async (req, res) => {
-  // load all messages from database
-  try {
-    const messages = await Message.find({})
-    res.json({
-      messages: messages,
-      status: 'all good',
-    })
-  } catch (err) {
-    console.error(err)
-    res.status(400).json({
-      error: err,
-      status: 'failed to retrieve messages from the database',
-    })
-  }
-})
+// app.get('/aboutus', async (req, res) => {
+//   //load all messages from database
+//   try {
+//     const messages = await Message.find({})
+//     res.json({
+//       messages: messages,
+//       status: 'all good',
+//     })
+//   } catch (err) {
+//     console.error(err)
+//     res.status(400).json({
+//       error: err,
+//       status: 'failed to retrieve messages from the database',
+//     })
+//   }
+// })
 
 
-app.use('/aboutus', express.static('./fiora.jpg'));
+
 
 // a route to handle fetching a single message by its id
 app.get('/messages/:messageId', async (req, res) => {
