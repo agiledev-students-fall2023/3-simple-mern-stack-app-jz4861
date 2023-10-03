@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './AboutUs.css'
 import axios from 'axios'
-
+import image from './fiora.jpg';
 
 /**
  * A React component that represents the Home page of the app.
@@ -16,7 +16,9 @@ const AboutUs = props => {
       <p>
         Check out the <Link to="/">home page</Link>.
       </p>
-      <img src="http://localhost:7002/static/fiora.jpg" className="App-logo" alt=" " />
+      <p>From the back end:</p>
+      <img src="http://localhost:5002/static/fiora.jpg" className="App-logo" alt=" " />
+
 
 
     </>
