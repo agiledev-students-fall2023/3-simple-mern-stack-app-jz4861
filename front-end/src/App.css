@@ -1,7 +1,7 @@
 html,
-body {
-  background-color: #282c34;
-}
+/* body {
+  background-color: #a9a9a9;
+} */
 
 html {
   box-sizing: border-box;
@@ -17,6 +17,7 @@ html {
 
 .App {
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,5 +36,5 @@ html {
   padding: 20px;
 }
 .App-link {
-  color: #61dafb;
+  color: #a9a9a9;
 }

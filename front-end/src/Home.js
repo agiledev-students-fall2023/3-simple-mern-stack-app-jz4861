@@ -9,13 +9,16 @@ import './Home.css'
 const Home = props => {
   return (
     <>
-      <h1>Hello and welcome!</h1>
-      <p>This is a full MERN-stack app, whether you like it or not!</p>
+      <h1>Home</h1>
+
       <p>
-        Check out the <Link to="/messages">messages page</Link>.
+        <Link to="/login"><button style={{ width: '400px', height: '50px' }}>Login</button></Link><br /><br /><br /><br />
       </p>
       <p>
-        And the <Link to="/aboutus">About Us page</Link>.
+      <Link to="/createaccount"><button style={{ width: '400px', height: '50px' }}>CreateAccount</button></Link><br /><br /><br /><br />
+      </p>
+      <p>
+      <Link to="/settings"><button style={{ width: '400px', height: '50px' }}>Settings</button></Link><br /><br /><br /><br />
       </p>
     </>
   )

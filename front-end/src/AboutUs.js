@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './AboutUs.css'
 import axios from 'axios'
-import image from './fiora.jpg';
+
 
 /**
  * A React component that represents the Home page of the app.

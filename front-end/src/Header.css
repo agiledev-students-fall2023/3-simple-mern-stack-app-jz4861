@@ -5,7 +5,7 @@
 }
 
 .Header-header {
-  background-color: #282c34;
+  background-color: #666666;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   display: inline-block;
 }
 
-.nav-links {
+/* .nav-links {
   list-style: none;
 }
 .nav-item {
@@ -33,7 +33,7 @@
 
 .nav-item:hover a {
   color: gray;
-}
+} */
 
 .logo img {
   width: 175px;

@@ -14,14 +14,14 @@ const Header = props => {
         <Link to="/" className="logo">
           <img src={logo} alt="Our fabulous logo" />
         </Link>
-        <ul className="nav-links">
+        {/* <ul className="nav-links">
           <li className="nav-item">
             <Link to="/">Home</Link>
           </li>
           <li className="nav-item">
             <Link to="/messages">Messages</Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   )
